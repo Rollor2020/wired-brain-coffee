@@ -3,7 +3,7 @@
 # Check https://circleci.com/docs/2.0/language-elixir/ for more details
 version: 2
 jobs:
-  build:a
+  build:
     docker:
       # specify the version here
       - image: circleci/ruby:2.4.1-node-browsers
@@ -19,9 +19,9 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run:
-        name: Greeting
-        command: echo Hello, World.
+          name: Greeting
+          command: echo Hello, World.
       
       - run:
-        name: Print the current time
-        command: date
+          name: Print the current time
+          command: date
